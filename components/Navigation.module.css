@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Ottawa';
+  src: url('/fonts/OttawaPlain.woff2') format('woff2'), /* Ajusta la ruta y el formato según tus archivos */
+       url('/fonts/OttawaPlain.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header{
+     font-family: 'Ottawa', sans-serif;
+     background-color: #fff;
+     display:flex; 
+     justify-content: space-between;
+     align-items: center;
+     margin: 0;
+     padding: 0px 25px;
+     position: relative; 
+     border-bottom: 1px solid #d3d3d3;
+     box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.10), 0px 6px 6px 0px rgba(0, 0, 0, 0.09), 0px 15px 11px 0px rgba(0, 0, 0, 0.05), 0px 63px 25px 0px rgba(0, 0, 0, 0.01), 0px 98px 27px 0px rgba(0, 0, 0, 0.00);
+}
+
+.menuIcon, .submenuEscritorio { display: none; }
+.logo{ max-width:180px;}
+
+.redesBuscador{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.redes{
+  display: flex;
+  gap: 10px;
+}
+
+.navigationEscritorio{
+  display:flex; 
+  flex-wrap: wrap;
+  list-style:none; 
+  gap:30px;
+  font-size: 18px;
+}
+
+.navigationEscritorio li{padding: 10px;}
+.navigationEscritorio .paddingMenuEscritorio:hover{background-color: #0051BA;}
+.navigationEscritorio .paddingMenuEscritorio:hover .opcionPadre{color: #fff;}
+.submenuEscritorio ul, .navigationEscritorio a{color: #0051BA;}
+
+.navigationEscritorio a {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigationEscritorio li:hover .submenuEscritorio, .visible{
+  position: absolute;  
+  width: 100%;
+  top: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  z-index: 2000;
+  margin: 0;
+  padding: 50px;
+}
+
+.submenuEscritorio .categoria {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+.submenuEscritorio .categoria i{font-size: 28px;}
+
+.submenuEscritorio li {
+ display: block;
+ line-height: 1;
+ /* border-bottom: 1px solid #0051BA; */
+ -webkit-column-break-inside: avoid;
+ page-break-inside: avoid;
+ break-inside: avoid;
+ padding: 1.5px;
+}
+
+.submenuEscritorio li a{padding: 0.5em 0 0.5em 10px; margin: 0px;}
+.submenuEscritorio li a:hover{background-color: #d3d3d3;}
+
+.submenuEscritorio li:hover {
+  font-weight: 800;
+ }
+
+ .submenuEscritorio a {
+  text-transform: inherit;
+  font-size: 18px;
+  font-weight: 400;
+ }
+
+
+
+@media (max-width: 1232px) {
+  .logo{ max-width:100px; }
+  .redesBuscador{gap: 10px;}
+  .redes{gap: 6px;}
+  .navigationEscritorio{gap:20px;}
+} 
+
+@media (min-width: 1025px) {
+  .navigationEscritorio{
+    font-size: 16px;
+    gap: 14px;
+  }
+}
+
+
+
+@media (min-width: 1025px) {
+  .navigation{display: none;}
+  .sedeMovil{display: none;}
+}
+
+@media (max-width: 1024px) {
+    .header, .opcionPadre{ position: relative;} 
+    .logo{ 
+      position: absolute;
+      max-width:150px; 
+      left:10px;
+      top: 12px;
+      z-index: 4000;
+    }
+    
+    .navigationEscritorio, .menuNoActive, .submenu{ display:none; }
+
+    .menuIcon {
+      display: flex; 
+      z-index: 3000;
+      padding: 8px 0;
+    }
+
+    .menuIcon i{
+      z-index: 3000;
+      font-size: 36px;
+    }
+
+    .menuActive, .submenuActive{
+      list-style:none; 
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menuActive{
+      position: absolute;
+      padding: 100px 0px 20px 0px;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left:0;
+      gap: 20px;
+      z-index: 2000;
+      background-color: white;
+      border-radius: 12px;
+      text-transform: uppercase;
+      font-size: 21px;
+    }
+
+    .opcionPadre{ 
+      display: flex;
+      align-items: center;
+      padding: 0px 20px 10px 20px;
+      border-bottom: 1px solid #0051BA;
+     }
+
+     .opcionPadre i, .menuActive,  .menuIcon i{color: #0051BA;}
+
+     .navigation .ayto {
+      border-top: none;
+      padding-top: 0px;
+     }
+
+    .submenuActive {
+      gap: 6px;
+      padding:8px 0px 8px 35px;
+      font-size: 18px;
+      text-transform: initial;
+    }
+}
+
+@media (max-width: 768px) {
+  .header{padding: 0px 10px;}
+  .logo{ max-width:125px; }
+}  

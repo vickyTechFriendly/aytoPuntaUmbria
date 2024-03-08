@@ -1,0 +1,58 @@
+.skipLink {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+  }
+  
+  .skipLink:focus {
+    left: 10px;
+    top: 10px;
+  }
+  
+.barraSuperior, .barraSuperior ul, .barraSuperior .meteorologia{
+    display: flex;
+    align-items: center;
+}
+
+.barraSuperior{
+    justify-content: space-between;
+    background-color: #0051BA;
+    padding: 5px 40px;
+}
+
+.barraSuperior i, .barraSuperior .meteorologia{color: white;}
+
+.barraSuperior ul{
+    gap: 10px;
+    list-style: none;
+}
+
+.barraSuperior i{font-size: 18px;}
+.barraSuperior i:hover{font-size: 17px;}
+
+.barraSuperior .meteorologia{
+    gap: 8px;
+    height: 25px;
+    font-size: 15px;
+}
+
+.barraSuperior .meteorologia img{height: 32px;}
+
+.barraSuperior .redes{
+    display: flex;
+    gap: 10px;
+}
+
+.barraSuperior .redes img:hover{transform: scale(1.15);}
+
+@media (max-width: 1024px) {
+    .barraSuperior{padding: 5px 30px;}
+}
+
+@media (max-width: 768px) {
+    .barraSuperior{padding: 5px 18px;}
+}

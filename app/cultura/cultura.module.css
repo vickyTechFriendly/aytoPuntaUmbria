@@ -1,0 +1,637 @@
+.cabecera{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+
+.cabecera img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.35);
+}
+
+.cabecera h1{
+    position: absolute;
+    bottom: 35px;
+    left: 5%;
+    color: white;
+    text-align: center;
+    font-size: 72px;
+    font-size: 900;
+}
+
+.main { padding: 0 5% 3rem 5%;}
+
+.main p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.main a {color: #0051BA;}
+
+.opciones{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}  
+
+.años{
+    margin-top: 1rem;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.opcion{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border: 2px solid #0051BA;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    color: #0051BA;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.opcion i{
+    color: #0051BA;
+    font-size: 32px;
+}
+
+.opcionesTexto .opcion:hover, .opcionesTexto .opcion:hover i{
+    background-color: #0051BA;
+    color: white;
+}
+
+.opcionesVisuales .opcion{
+    width: 31%;
+    flex-direction: column;
+    padding: 0px;
+    padding-bottom: 20px;
+    gap: 18px;
+}
+
+.opcionesVisuales .opcion div{
+    width: 100%;
+    height: 250px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.opcionesVisuales img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+    transition: transform 0.3s ease;
+}
+
+.opcionesVisuales .opcion:hover img{transform: scale(1.1); }
+
+.migasPan{
+    margin: 0.5rem 0 4rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.migasPan p{
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.migasPan a:hover{font-weight: 700;}
+
+.migasPan i{
+    font-size: 14px;
+    color: #0051BA;
+    padding-top: 5px;
+}
+
+.main h2 {
+    display: flex;
+    align-items: center;
+    color: #0051BA;
+    font-size: 32px;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.main h2 i{
+    color: #0051BA;
+    font-size: 32px;
+}
+
+.main h3 {
+    color: #0051BA;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.main h4 {
+    color: #0051BA;
+    font-size: 18px;
+    margin: 50px 0 10px 0;
+}
+
+.main .descripcionSala ul{font-size: 18px; }
+
+.main li{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.boton{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.boton a{
+  display: inline-block;
+  background-color: #0051BA;
+  color: white;
+  padding: 8px 12px 12px 12px;
+  border-radius: 10px;
+  text-decoration: none; 
+  margin: 0 auto;
+}
+
+.comoAlquilar h3{
+    margin: 80px 0 20px 0;
+    font-size: 24px;}
+
+.comoAlquilar img{max-height: 80vh;}
+
+.fullscreenContainer {position: relative;}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fullscreenImage {
+    max-width: 90%;
+    max-height: 90%;
+    cursor: pointer;
+}
+
+.clickableImage {cursor: pointer;}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #0051ba00;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex .descripcion{
+    width: calc(100% - 600px);
+}
+ 
+.datosContacto{
+    width: 550px;
+    font-size: 18px;
+}
+
+.datosContacto p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.datosContacto a{
+    display: flex;
+    align-items: center;
+}
+
+.datosContacto i{
+    color: black;
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.descripcionSala{
+    margin-top: 25px;
+}
+
+.noticia {
+    position: relative;
+    height: auto; 
+    border-radius: 18px;
+    flex: 0 0 31%; 
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+  
+.noticia img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover; 
+    border-radius: 18px;
+    transition: transform 0.3s ease;
+}
+
+.noticia:hover img{transform: scale(1.1); }
+  
+.sliderViewport {
+    overflow: hidden;
+    width: 100%; 
+}
+  
+.sliderContainer {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%; 
+}
+  
+.noticia .informacion{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0051BA;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    padding: 18px 20px;
+    height: 140px;
+}
+  
+.informacion .datos{
+    display: flex;
+    margin-bottom: 0px;
+}
+  
+.noticia .categoria{
+    display: inline;
+    font-size:14px;
+    background-color: #fff;
+    border-radius: 48px;
+    padding: 2px 15px;
+    font-weight: 500;
+    margin-right: 7.5px;
+    color: #1a171b;
+    text-transform: capitalize;
+}
+  
+.noticia .fecha{
+    margin-left: 7.5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+  
+.noticia h3 {
+    font-family: '__Mulish_2f1d39', '__Mulish_Fallback_2f1d39';
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+    word-wrap: break-word; 
+    width: 100%; 
+}
+
+.noticia .datos p{margin-bottom: 16px;}
+  
+.sliderBtnPrev, .sliderBtnNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.sliderBtnPrev {left: -15px;}
+.sliderBtnNext {right: -15px;}
+  
+.sliderIndicators {
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.sliderDot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+  
+.sliderDotActive {background-color: #0051BA; }
+
+.listadoNoticias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 1rem 0 3rem 0;
+}
+
+.listadoPoemas{
+    padding-top: 0px;
+}
+
+.evento {
+    position: relative;
+    height: auto; 
+    border-radius: 18px;
+    margin: 10px 0; 
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+  
+.evento img{
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 18px;
+    width: 100%;
+}
+  
+.evento .informacion{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 18px 20px;
+    height: 180px;
+    background-color: #0051BA !important;
+    width: 100%;
+}
+
+.listadoEventos .datos{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 12px;
+}
+
+.listadoEventos .informacion, .evento:hover .informacion{
+    padding: 10px 20px;
+    height: auto;
+    min-height: 200px; 
+}
+
+
+.evento .categoria{
+    display: inline;
+    font-size:14px;
+    background-color: #fff;
+    border-radius: 48px;
+    padding: 2px 15px;
+    font-weight: 500;
+    margin-right: 7.5px;
+    color: #1a171b;
+    text-transform: capitalize;
+} 
+
+.evento .fecha{
+    margin-left: 7.5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.listadoEventos .evento .fecha{
+    margin-left: 0px;
+}
+
+.listadoEventos .fecha i, .listadoEventos .ubicacion i{
+    margin-right: 5px;
+}
+    
+.evento h2 {
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+    word-wrap: break-word; 
+    margin-bottom: 6px;
+}
+
+.listadoEventos .evento h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.listadoEventos .fecha, .listadoEventos .ubicacion{
+    display: flex;
+    align-items: center;
+}  
+
+.categoriasEvento{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .fecha{
+    margin-bottom: 3px;
+}
+
+.underline:hover{text-decoration: underline;}
+
+/* .main ul{font-size: 18px;}
+.main li{margin-bottom: 10px; margin-left: 20px;}
+*/
+
+
+/* @media (max-width: 1300px){
+    .pdfs img{height: 150px;}
+}   */
+
+@media (max-width: 1100px){
+    .cabecera{height: 25vh;}
+
+    .opcionesVisuales{margin-top: 2.5rem;}  
+    .opcionesVisuales img, .opcionesVisuales .opcion div{ height: 200px;} 
+    .opcionesVisuales .opcion{text-align: center;}
+
+    /* .pdfs img{height: 100px;}
+    .pdf1 > * {width: 40%;}
+    .pdf1 img{height: 180px;}
+    .documentos h3{margin: 50px 0 20px 0;}
+    .documentos h4{padding: 5px 8px 8px 8px;} */
+} 
+
+@media (max-width: 950px) {
+    .noticia .informacion{padding: 14px 16px;}
+    .noticia .fecha{margin-left: 5px;}
+    .noticia .datos p{margin-bottom: 10px;}
+      
+    .noticia .categoria{
+        display: flex;
+        align-items: center;
+        padding: 1.5px 12px 3.5px 12px;
+        margin-right: 5px;
+    }
+} 
+
+@media (max-width: 820px){
+    .opcion{
+        gap: 15px;
+        padding: 10px 12px 12px 12px;
+    }
+
+    .main h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .main h2 i{font-size: 28px;}
+
+    .opcionesVisuales img, .opcionesVisuales .opcion div{ height: 150px;}
+    
+    .opcionesVisuales .opcion{
+        padding-bottom: 12px;
+        gap: 10px;
+    }
+
+    .noticia img{height: 280px;}
+    .noticia h3 {font-size: 18px;}
+
+    /* .pdfs{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 3%;
+    }
+
+    .pdfs > * {
+        width: 31%;
+        margin-bottom: 40px;
+    }
+
+    .pdf1 > * {width: 50%;}
+
+    .flex{flex-direction: column;}
+
+    .mapa{
+        width: 100%;
+        height: 250px;
+        margin: 30px 0 0 0;
+    } */
+} 
+
+@media (max-width: 768px) {
+    .sliderContainer {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory; 
+    }
+
+    .sliderBtnPrev, .sliderBtnNext{display: none;}
+    .noticia {
+        flex: 0 0 45%; 
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 700px){
+    .cabecera h1{
+        bottom: 20px;
+        font-size: 48px;
+    }
+
+    .opciones{margin-top: 2.5rem;} 
+
+    .opcion{
+        gap: 10px;
+        padding: 8px 12px 10px 12px;
+    }
+
+    .opcionesVisuales{ margin-top: 1rem;}
+    .opcionesVisuales img, .opcionesVisuales .opcion div{ height: 100px;}
+    
+
+    /* .migasPan{margin-bottom: 3rem;}
+
+    .boton{margin-top: 30px;}
+
+    .comoAlquilar h3{ margin-top: 60px;}
+
+    .documentos h3{margin: 50px 0 15px 0;}
+
+    .tabla {overflow-x: auto;}
+    .pdf1 > * {width: 100%;} */
+} 
+
+@media (max-width: 620px){
+    .opciones{
+        justify-content: flex-start;
+        gap: 4%;
+    }  
+    
+    .opcion{
+        width: 48%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        color: #0051BA;
+        font-size: 18px;
+        font-weight: 700;
+        gap: 15px;
+        padding: 10px 15px 12px 15px;
+    }
+    
+    .opcion i{font-size: 24px;}
+
+    .noticia {margin-right: 20px;}
+}
+
+@media (max-width: 540px) {
+    .noticia {flex: 0 0 85%; }
+}
+
+@media (max-width: 480px){
+    
+    .cabecera h1{width: 200px;}
+
+    .opcion{
+        width: 100%;
+        padding: 12px 20px 15px 20px;
+        margin-bottom: 12px;
+    }
+    
+    .migasPan{
+        margin-bottom: 2rem;
+        font-size: 14px;
+    }
+    .migasPan p{font-size: 14px;}
+    .migasPan i{padding-top: 4px;}
+
+    .main h2 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    
+    .main h2 i{font-size: 21px;}
+
+    .comoAlquilar h3{
+        margin: 40px 0 10px 0;
+        font-size: 21px;
+    }
+
+    .horarios h3{font-size: 18px;}
+
+    .pdfs{gap: 4%;}
+    .pdfs img{height: 70px;}
+    .documentos h4{font-size: 16px;}
+
+    .pdfs > * {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    
+    .pdf1 > * {width: 100%;}
+    .pdf1 img{height: 150px;}
+} 

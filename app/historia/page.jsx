@@ -1,0 +1,62 @@
+"use client"
+import styles from '../pages.module.css'
+import React, { useState, useEffect } from 'react';
+import { usePageContext } from './../PageContext.js';
+
+export default function Historia() {
+  const { setTitle, setDescription, setKeywords } = usePageContext();
+
+    useEffect(() => {
+        setTitle('Historia - Ayuntamiento de Punta Umbría');
+        setDescription('Web oficial del Excmo. Ayuntamiento');
+        setKeywords('Punta Umbría, historia');
+    }, []);
+
+    const [activeTab, setActiveTab] = useState(0);
+
+    const tabs = [
+      { title: "Punta Umbría Romana", content: (
+        <>
+        <p>Durante la dominación romana de la península Ibérica surgieron multitud de asentamientos a lo largo de la costa dedicados a la explotación de los recursos obtenidos en la mar. Uno de estos asentamientos fue localizado en Punta Umbría, en una zona conocida como “El Eucaliptal” en la década de 1990, si bien ya era conocida su existencia desde mucho antes por los habitantes de la localidad. Los materiales encontrados y analizados pusieron al descubierto una asentamiento localizado entre los siglos II y VI d.C. Entre los restos encontrados se hallaba una necrópolis y un conjunto de piletas cuyo uso era el de transformar y elaborar conservas y salazones. Este enclave sería por tanto una más de las Cetariae o factorías repartidas por todo el litoral del Golfo de Cádiz. Entre los productos elaborados destacaría el garum, un manjar muy apreciado en el Imperio Romano, la púrpura, los salazones de diversas especies etc.</p><p>El análisis del yacimiento ha permitido establecer la más que probable especialización de este asentamiento en la obtención y elaboración de púrpura, tinte muy apreciado de la antigüedad, a partir del murex brandaris del que han aparecido enormes cantidades de restos tendiendo todos el caparazón la misma huella de manipulación: el caparazón perfectamente fragmentado para extraer la pequeña bolsa de púrpura que contiene en su interior.</p><p>La existencia de este asentamiento pone de manifiesto que el entorno que ocupa en la actualidad Punta Umbría estaría inserta dentro de la intrincada red de relaciones y rutas comerciales que se dirigían desde Roma y cuya dirección principal sin lugar a duda eran los puertos más importantes del imperio Romano tales como Ostia en Roma, Cartago en Túnez, Hispalis, Gades, o el puerto de El Pireo en Atenas.</p><p>Gracias, a la labor desarrollada por entidades ligadas al estudio de los yacimientos arqueológicos que ha ido apareciendo en sucesivas campañas, el material encontrado en el Eucaliptal ha sido catalogado y estudiado a la espera de la puesta en marcha de un proyecto que permita la visita y estudio de los restos arqueológicos existentes en la localidad.</p><p>Los restos de esto primeros pobladores, cuyo nombre o denominación ha quedado en el olvido, han dejado una importante huella en la historia de Punta Umbría por ser los vestigios más antiguos que posee la localidad.</p>
+        </>
+      ) },
+      { title: "Punta Umbría y los Piratas Berberíscos", content: (
+        <>
+          <p>La Historia de Punta Umbría está intimamente ligada a la presencia de una torre construida para vigilar la costas onubense de los frecuentes ataques que efectuaban piratas berberiscos desde el norte de África. Pertenecía esta torre vigía a un proyecto conjunto de defensa de las costas españolas iniciado a finales del siglo XVI y terminado a principios del XVII. El proyecto fue iniciado en 1577 durante el reinado de Felipe II y elaborado por el visitador real de las costas andaluzas Luis Bravo de Lagunas que estimó como idónea la creación de una línea de Torres Vigías por todo el golfo de Cádiz, dotadas de la artillería y la guarnición necesaria.</p><p>La construcción de las torres vigías siguió un largo y arduo proceso de reclamaciones por parte de todos aquellos que tenían que aportar los gastos de la construcción. Correspondería el coste de la construcción de la Torre Umbría a los cabildos de Huelva, Moguer y San Juan del Puerto municipios que se negaban a construirlo debido a la escasez de medios que poseían. Finalmente se destinó una parte del impuesto que gravaba las capturas de pescado para rematar la construcción de las torres y su posterior mantenimiento. Este episodio hizo que las torres no fueran concluidas hasta el reinado de Felipe III siendo una placa de mármol situada en la Torre Umbría la que atestigua el año 1614 como fecha en la que las fortalezas quedaron finalizadas.</p><p>En la costa de Huelva además, se pueden encontrar otras tantas torres más como la de Punta Umbría, cuyos nombres, enumeradas desde la desembocadura del Guadalquivir hasta el Guadiana, son torre san Jacinto, Torre Zalabar, Torre Carbonero, Torre la Higuera, Torre del Asperillo, Torre del Oro, Torre Arenilla, Torre Umbría, Torre del Catalán y Torre Canela. La misión de estas torres era la de vigilar las costas ante la llegada de las flotillas de barcos piratas y dar aviso mediante señales de humo al resto de torres así como a las poblaciones cercanas y a los barcos que faenaban por la costa. En concreto, Torre Umbría junto con Torre Arenilla era la encargada de la vigilancia de la Ría de Huelva.</p><p>Actualmente, Torre Umbría es la única que se encuentra inserta dentro de un recinto urbano pudiendo además todo aquel que lo desee poder realizar una visita, al haberse convertido en un centro de interpretación, permitiendo conocer la historia de las Torres Almenara de la Costa de Huelva.</p>
+        </>
+      ) },
+      { title: "Punta Umbría y la Presencia Británica", content: (
+        <>
+        <p>En las últimas década del siglo XIX es cuando Punta Umbría comienza a surgir hasta convertirse en la localidad en lo que en la actualidad conocemos.</p><p>El cuerpo de carabineros del ejército español, encargado de la vigilancia de las costas españolas, sería el primero en establecerse en Punta Umbría. Hay constancia de su presencia en la localidad desde la década de 1830. La labor de los carabineros se realizaría en un lugar totalmente apartado y aislado ya que junto a la vigilancia de la costas se encontraría la necesidad de tener que autoabastecerse, motivo por el cual practicaron la agricultura, la pesca, la caza, etc. Este cuerpo tenía situada su casa cuartel cerca de la Torre Umbría y una pequeña caseta dentro de la actual Plaza Pérez Pastor.</p><p>La llegada de los Ingleses a Huelva tras la compra de las minas de Rio Tinto en 1873 supuso un cambio radical para la provincia. Este fue el momento en el que se llevaron a cabo las grandes obras de infraestructuras de Huelva y en definitiva de la transformación de todo el entramado socioeconómico de la provincia.</p><p>Punta Umbría no quedaría apartada de esta situación y en torno a 1880 encontramos las primeras referencias dadas por Guillermo Sundhein, donde habla de la “existencia de la playa de Punta Umbría cerca de un pequeño pueblo de pescadores y que sería un excelenete sanatorio para el staff de la minas. El ya había levantado una allí y pensaba que la playa sería un lugar ideal para la gente que se estuviese recuperando de la malaria y supondría para los miembros del staff de la minas un agradable cambio, teniendo en cuena el aire sulfuroso de las minas”.</p><p>A partir de esta fecha se iniciaría la construcción en un una parte del municipio de Cartaya de un conjunto de casas por parte de la Rio Tinto Company que serías utilizadas como lugar de descanso por parte de los miembros del staff británico empleado en la mina. En un principio los ingleses venían para recuperarse de los efectos nocivos del aire sulfuroso existente en las minas de Riotinto, pero con el paso del tiempo se produjo un aumento en la llegada de lo que podríamos llamar turistas, que se observa en la construcción de casas particulares y de pequeños hoteles.</p><p>La llegada de la Compañía atrajo a más familias, en su mayoría españolas, que ponían en práctica las mismas costumbres que los británicos en relación al hábito de acudir a la playa durante la etapa estival.</p><p style={{marginTop: 40 }}><strong>EL Legado Cultural Inglés.</strong></p><p style={{marginTop: 10 }}>La presencia británica en Punta Umbría dejó como legado fundamental una tipología constructiva que a lo largo de los años han sido denominadas popularmente “Casas de los Ingleses”. Este modo de construir de casa elevadas sobre pilares con la fachada porticada fue pronto copiado por todo aquel que se hacía construir una casa en Punta Umbría con el único objetivo de pasar aquí la temporada estival de verano.</p><p>Este tipo de construcciones siguieron siendo una fuente de inspiración para todo aquel que se edificaba una casa en Punta Umbría, hasta tal punto es así que el Ayuntamiento de la localidad se asemeja a este tipo de construcciones. Aun perviven casas y pequeños chalets de clara inspiración británica, siendo algunas contemporáneas de las originales y testigo mudo del inicio del veraneo en Punta Umbría.</p><p>Para la pervivencia de este legado el Ayuntamiento de Punta Umbría abrió " La Casa Museo de los Ingleses", institución que explica y recrea la presencia Británica en Punta Umbría.</p>
+        </>
+      ) }
+
+    ];
+
+    const handleTabClick = (index) => {
+      setActiveTab(index);
+    }
+
+    return (
+      <main className={styles.main}>
+        <h1 tabIndex="0" id="contenido">Conoce la Historia de Punta Umbria</h1>
+          <div className={styles.historia}>
+            <p>La historia del actual pueblo de Punta Umbría debe situarse en el último tercio del siglo XIX entre la llegada de los miembros del staff de la Rio Tinto Company Limited y el auge de la industria pesquera durante esa etapa en la Costa de Huelva. Sin embargo es posible localizar en la localidad restos, vestigios y edificios que enlazan la historia del Punta Umbría con un pasado mucho más remoto.</p><p>La existencia de un yacimiento de origen Romano, situado en la zona conocida como el Eucaliptal, da muestra de la antigüedad que posee el poblamiento del territorio que ocupa Punta Umbría en la actualidad. Siglos después, la fundación en un reino Taifa en la Isla de Saltés, durante el dominio musulmán de la península Ibérica, dejó su impronta en este territorio. Sería durante la edad Moderna cuando Punta Umbría comienza a ser reconocido como un lugar destacado en la geografía de la costa de Huelva, primero por las disputa entre los Señores de Huelva y Gibraleón por la extensión de sus términos, y posteriormente por acoger el emplazamiento de una de las Torres que defenderían la costa española de los ataques de los Piratas Berberiscos y cobrando desde ese momento importancia en las diferentes guerras en las que el Imperio Español se vería involucrada durante toda la Edad Moderna.</p><p>Sería el siglo XX cuando se configuraría el pueblo que actualmente podemos conocer y reconocer. La llegada de la Rio Tinto Company abrió Punta Umbría a las actividades del ocio y el veraneo coincidiendo con la llegada de familias procedentes de otras partes de Huelva y Andalucía para asentarse. La fecha de 26 de Abril 1963 es de las más relevantes y destacadas de esta localidad puesto que marca el momento en el que Punta Umbría se segrega del pueblo vecino de Cartaya y se constituye como municipio independiente.</p><p>En la actualidad recorrer Punta Umbría te lleva hacia una población moderna, con destacadas infraestructuras turísticas y pesqueras, donde se conjugan perfectamente la historia más moderna con la más reciente.</p><p>No puedes dejar de saber</p>
+
+            <div id="pestanas" className={styles.pestanas}>
+              {tabs.map((tab, index) => (
+                <a key={index} className={index === activeTab ? styles.active : ''} onClick={() => handleTabClick(index)} onKeyDown={(e) => e.key === 'Enter' && handleTabClick(index)} tabindex="0" id="contenido">
+                {tab.title}
+              </a>
+              ))}
+            </div>
+
+            {tabs.map((tab, index) => (
+              <div key={index} className={styles.contenidoPestana} style={{ display: index === activeTab ? 'block' : 'none' }}>
+              <p>{tab.content}</p>
+            </div>
+            ))}
+          </div>
+      </main>
+    )
+}

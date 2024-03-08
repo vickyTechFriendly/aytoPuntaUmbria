@@ -1,0 +1,104 @@
+  .menuIconos{
+    display: block;
+    z-index: 800;
+  }
+
+  .menuIconos ul{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style:none; 
+    margin: -50px auto 0px auto;
+  }
+
+  .menuIconos li{width: 20%;}
+  
+  .menuIconos a{
+    font-family: 'Ottawa', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .menuIconos ul li i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0051BA;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 45px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.20), 0px 6px 5px 0px rgba(0, 0, 0, 0.205), 8px 15px 11px 0px rgba(0, 0, 0, 0.05), 0px 18px 5px 3px rgba(0, 0, 0, 0.01), 4px 6px 6px -4px rgba(0, 0, 0, 0.10)
+  }
+
+  @keyframes giroHorizontal {
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
+  }
+
+  .menuIconos ul li:hover i{
+    color: #0051BA;
+    background-color: #d3d3d3;
+    animation: giroHorizontal 0.5s linear;
+    transform-style: preserve-3d;
+  } 
+
+  #menuList li {display: none;}
+
+  .mas{ 
+    font-family: 'Ottawa', sans-serif;
+      background-color: #f4f4f400;
+      color: #222222;
+      border: none;
+      margin: 0px auto 3px auto;
+      font-size:72px;
+      display: flex;
+      align-items: center;
+  }
+
+  .mas:hover{ cursor: pointer;}
+  .mas i{ font-size: 32px;}
+  .hiddenMenuItem {display: none;}
+
+  .menuItem {
+      display: block;
+      margin-bottom: 5px;
+  }
+    
+
+  @media (max-width: 1024px) {
+    .menuIconos ul{width: 90%;}
+  }
+
+  @media (max-width: 820px) {
+    .menuIconos ul{justify-content: flex-start;}
+    .menuIconos li{width: 25%;}
+  }
+
+
+  @media (max-width: 760px) {
+    .menuIconos li{width: 33%;}
+    .menuIconos a{
+      gap: 6px;
+      font-weight: 500;
+    }
+    
+    .menuIconos ul li i{
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+    }
+
+    .menuIconos ul{
+      width: 95%;
+      margin-top: -35px;
+    }
+}

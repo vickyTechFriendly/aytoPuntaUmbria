@@ -1,0 +1,394 @@
+@font-face {
+  font-family: 'Ottawa';
+  src: url('/fonts/Ottawa.woff2') format('woff2'), /* Ajusta la ruta y el formato según tus archivos */
+       url('/fonts/Ottawa.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.masMovil{display: none;}
+.evento img, .mas a:hover, .mas a, .noticia img, .noticia .descripcion{display: block; }
+.main, .actualidad, .noticias, .mas, .agenda, .actividades article, .evento .informacion p, .noticia .datos {display: flex;}
+.main, .actualidad {flex-direction: column;}
+.noticias, .noticia img, .noticia .informacion, .evento img, .evento .informacion{width: 100%;}
+.agenda, .noticias, .actividades article{justify-content: space-between;}
+.actividades aside .semana, .actividades aside .dia, .noticia .categoria{color: #0051BA;}
+.noticia .informacion, .mas a, .evento .informacion{background-color: #0051BA;}
+
+.main h1{
+  font-size: 32px;
+  font: 700px;
+  margin-bottom: 20px;
+}
+
+.actualidad{
+  width: 90%;
+  margin: 70px auto;
+}
+
+.noticias{
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.noticia{
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.09), 0px 35px 21px 0px rgba(0, 0, 0, 0.05), 0px 63px 25px 0px rgba(0, 0, 0, 0.01), 0px 98px 27px 0px rgba(0, 0, 0, 0.00);
+}
+
+.noticia img{
+  height: 400px;
+  object-fit: cover; 
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.noticia:hover img{transform: scale(1.1);}
+
+.noticia .informacion{
+  position: absolute;
+  bottom: 0;
+  height: 180px;
+  color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 20px;
+}
+
+.actividades .evento .informacion{height: 185px;}
+
+.noticia h2{ font-size: 24px; }
+
+.noticia .datos{
+  align-items: center;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.noticia .descripcion{
+  margin-top: 5px;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.noticia .categoria, .evento .categoria{
+  display: inline;
+  font-size:14px;
+  background-color: #fff;
+  border-radius: 48px;
+  padding: 2px 15px;
+  font-weight: 500;
+  margin-right: 7.5px;
+}
+
+.actividades .evento .categoria{
+  display: inline;
+  color: #0051BA;
+}
+
+.actividades .evento .fecha{ margin-top: 20px;}
+
+.noticia .fecha{
+  margin-left: 7.5px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.mas{justify-content: flex-end;}
+
+.mas a{
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.mas a:hover{
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  background-color: #d3d3d3;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.actividades{
+  background-color: #F4F4F4;
+  padding: 4rem 5% 5rem 5%;
+}
+
+.actividades aside{
+  width: 30%;
+  background-color: #ECECEC;
+  border-radius: 10px;
+  padding: 25px 25px 0 25px;
+}
+
+.actividades aside .fechaActual{
+  text-align: center;  
+  text-transform: capitalize;
+  line-height: 1;
+  font-family: 'Ottawa', sans-serif;
+}
+
+.actividades aside .semana{
+  font-weight: 300;
+  font-size: 21px;
+}
+
+.actividades aside .dia{
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.actividades aside .mes{
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.actividades aside .calendario{
+  margin: 30px auto 0px auto;
+  border: none;
+  background-color: #ffffff00;
+  font-size: 14px;
+}
+
+.actividades aside .calendario button{
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.actividades article{
+  width: 66%;
+  flex-wrap: wrap;
+}
+
+.actividades article .evento{
+  width: 48%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.evento{
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.09), 0px 35px 21px 0px rgba(0, 0, 0, 0.05), 0px 63px 25px 0px rgba(0, 0, 0, 0.01), 0px 98px 27px 0px rgba(0, 0, 0, 0.00);
+}
+
+.actividades article .evento h2{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.evento img{
+  object-fit: cover; 
+  border-radius: 10px;
+  height: 420px;
+  transition: transform 0.3s ease;
+}
+
+.evento:hover img{transform: scale(1.1);}
+
+.evento .informacion{
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px;
+}
+
+.evento .informacion h2{ margin-bottom: 12px;}
+
+.evento .informacion p{
+  align-items: center;
+  margin: 5px 0;
+}
+
+.evento .informacion i{
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.calendario * {pointer-events: none;}
+
+.redesSociales{
+  background-image: url('https://publicacionesdelsur.b-cdn.net/articulos/articulos-798530.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+} 
+
+.redesSociales .contenido{
+  width: 100%;
+  padding: 50px 5%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.redesEmbebidas{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.redesEmbebidas div{width: 31%;}
+
+
+@media (max-width: 1300px) {
+  .noticia{width: 32%;}
+  .noticia .informacion{height: 220px;}
+}
+
+@media (max-width: 1089px) {
+  .actividades aside .calendario button{font-size: 14px;}
+ }
+ 
+@media (max-width: 1033px) {
+  .actividades aside .calendario button{font-size: 12px;}
+}
+
+@media (max-width: 1024px) {
+  .noticiaGrande{
+    width: 60%;
+    height: 450px;
+  }
+  
+  .noticiaGrande img{height: 450px;}
+  .noticiasPequenas{width: 37%;}
+  .noticiaPequena img{height: 212.5px;}
+  .informacionGrande{padding: 25px;}
+
+  .noticia h2{
+    font-size:21px;
+    line-height: 25px;
+  }
+
+  .actividades aside{padding: 35px 10px;}
+}
+ 
+
+@media (max-width: 900px) {
+  .noticias{ margin-bottom: 30px;}
+  .actualidad{margin: 50px auto;}
+ 
+  .noticia .informacion{
+    height: 225px;
+    padding: 15px;
+  }
+
+  .noticia .categoria{
+    padding: 2px 8px;
+    margin-right: 5px;
+  }
+  
+  .noticia .datos{margin-bottom: 12px;}
+  .evento .informacion h2{font-size: 18px;}
+}
+
+@media (max-width: 820px) {
+  .agenda{flex-wrap: wrap;}
+  
+  .actividades aside{
+    display: flex;
+    padding: 20px 15px;
+    margin-bottom: 25px;
+  }
+  
+  .actividades aside .fechaActual{ margin: 20px auto; }  
+  .actividades aside .calendario{ margin: 0px auto;}  
+  .actividades article, .actividades aside{ width: 100%; } 
+  .actividades article .evento{ width: 48%; }
+  .actividades article .evento img{ height: 300px; }
+}
+
+
+@media (max-width: 768px) {
+.noticias, .mas{display: none;}
+.actualidad{margin-bottom: 0px;}
+
+.noticias{
+  flex-direction: column;
+  gap: 20px;
+} 
+
+.noticia{
+  width: 100%;
+  padding-bottom: 25px;
+} 
+
+.noticia img {margin-bottom: 12px;}
+
+.noticia .datos{
+display:flex;
+flex-direction: row;
+align-items: center;
+margin-bottom: 5px;
+}
+
+.noticias .datos span{ line-height: 0px;}
+
+.masMovil{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+width: 80%;
+padding: 6px;
+border: none;
+border-radius: 24px;
+margin: auto;
+background-color: #0051BA;
+color: white;
+font-size: 18px;
+}  
+
+.masMovil a, .noticias .datos span{display: block;}
+
+.actividades{
+  padding: 1.5rem 5% 2.5rem 5%;
+  margin-top: 50px;
+}
+
+.actividades h1{font-size: 24px;}
+
+.actividades aside{
+  flex-direction: column;
+  padding: 10px;
+}
+
+.actividades aside .fechaActual{
+  display: flex;
+  gap: 5px;
+  margin: 10px auto 5px auto;
+}
+
+.actividades aside .fechaActual .semana, .actividades aside .fechaActual .dia, .actividades aside .fechaActual .mes, .actividades article .evento h2{font-size: 18px;}
+
+.actividades article .evento{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.evento .informacion{
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  padding: 12px 16px;
+}
+
+.actividades article .evento img{height: 140px;}
+.actividades article .evento p{font-size: 14px;}
+.evento .informacion h2{ margin-bottom: 8px;}
+.evento .informacion p{margin: 5px 0;}
+}
+
+
+
